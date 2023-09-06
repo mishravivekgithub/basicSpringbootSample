@@ -9,12 +9,8 @@
 name: Java CI with Maven
 
 on:
-  push:
-    branches: [ "main" ]
-  pull_request:
-    branches: [ "main" ]
   schedule:
-    - cron: "*/1 * * * *"
+    - cron:  '*/1 * * * *'
 
 jobs:
   build:
