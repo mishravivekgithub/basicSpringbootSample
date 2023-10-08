@@ -11,6 +11,13 @@ pool:
 
 steps:
 - task: Maven@3
+- task: AzureSpringCloud@0
+  inputs:
+    azureSubscription: 'MCAPS-Hybrid-REQ-52425-2023-mishravivek(c18151ea-b3a2-439d-8505-fa24344ab4eb)'
+    Action: 'Deploy'
+    AzureSpringCloud: 'loadspringappsskoda'
+    AppName: 'loadspringboot'
+    UseStagingDeployment: true
   inputs:
     mavenPomFile: 'pom.xml'
     mavenOptions: '-Xmx3072m'
