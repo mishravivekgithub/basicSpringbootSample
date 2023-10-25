@@ -10,6 +10,6 @@ public class DemoController {
 
     @GetMapping
     public String successMessage(){
-        return "Hello India";
+        return "Hello test";
     }
 }
